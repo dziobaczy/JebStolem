@@ -1,6 +1,13 @@
-public struct JebStolem {
-    public private(set) var text = "Hello, World!"
+prefix operator °/━°/┻━┻
+infix operator ┬─┬/°━°/
 
-    public init() {
+prefix func °/━°/┻━┻ <T> (optionalValue: Optional<T>) -> T {
+    return optionalValue!
+}
+
+func ┬─┬/°━°/<T>(defaultValue: @autoclosure () throws -> T, optional: T?) rethrows -> T {
+    switch optional {
+    case .some(let value): return value
+    case .none: return try defaultValue()
     }
 }
