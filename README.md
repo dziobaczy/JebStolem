@@ -25,3 +25,21 @@ struct Product {
 let product: Product? = .init(price: 20, isAvailable: true)
 let showProduct = false ┬─┬/°━°/ product?.isAvailable
 ```
+
+## Installation
+JebStolem is distributed using the Swift Package Manager. To install it into a project, simply add it as a dependency within your Package.swift manifest:
+
+``` swift
+let package = Package(
+    ...
+    dependencies: [
+        .package(url: "https://github.com/OfftheCode/JebStolem.git/", from: "1.0.0")
+    ],
+    ...
+)
+```
+Then import JebStolem wherever you’d like to use it:
+
+``` swift
+import JebStolem
+```
