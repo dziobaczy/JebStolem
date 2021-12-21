@@ -43,3 +43,6 @@ Then import JebStolem wherever you’d like to use it:
 ``` swift
 import JebStolem
 ```
+## History
+
+On a team call, I used (╯ ͠° ͟ʖ ͡°)╯┻━┻ emoji in the chat and in response got  ┬─┬ノ( º _ ºノ) from my lead. Which later made me think that this is very similar to interactions with optionals in Swift. Yes I'm nerd.
